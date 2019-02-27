@@ -1648,7 +1648,7 @@
 						"value": "[variables('redHatTags')]"
 					},
 					"sshPrivateKey": {
-						"value": "[variables('keyVaultSecret')]"
+						"value": "[parameters('keyVaultSecret')]"
 					}
 				}
 			}
