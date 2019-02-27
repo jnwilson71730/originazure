@@ -205,14 +205,14 @@
 		},
 		"aadClientId": {
 			"type": "string",
-			"defaultValue": "11111111-abcd-1234-efgh-111111111111",
+			"defaultValue": "4104dfff-cf02-4a23-a52d-33d51fa8eb65",
 			"metadata": {
 				"description": "Azure AD Client ID"
 			}
 		},
 		"aadClientSecret": {
 			"type": "securestring",
-			"defaultValue": "N0t a valid secret",
+			"defaultValue": "14979jnwoiuasohlkfsdlf8383",
 			"metadata": {
 				"description": "Azure AD Client Secret"
 			}
