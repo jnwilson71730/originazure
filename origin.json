@@ -12,7 +12,7 @@
 		},
 		"masterVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_E2s_v3",
+			"defaultValue": "Standard_DS3_v2",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D1", "Standard_D2", "Standard_D3", "Standard_D4",
@@ -109,7 +109,7 @@
 		},
 		"infraInstanceCount": {
 			"type": "int",
-			"defaultValue": 2,
+			"defaultValue": 3,
 			"allowedValues": [1, 2, 3],
 			"metadata": {
 				"description": "Number of OpenShift infra nodes."
@@ -154,7 +154,7 @@
 		},
 		"enableMetrics": {
 			"type": "string",
-			"defaultValue": "true",
+			"defaultValue": "false",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -164,7 +164,7 @@
 		},
 		"enableLogging": {
 			"type": "string",
-			"defaultValue": "true",
+			"defaultValue": "false",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -212,7 +212,6 @@
 		},
 		"aadClientSecret": {
 			"type": "securestring",
-			"defaultValue": "14979jnwoiuasohlkfsdlf8383",
 			"metadata": {
 				"description": "Azure AD Client Secret"
 			}
@@ -229,7 +228,7 @@
 		},
 		"defaultSubDomain": {
 			"type": "string",
-			"defaultValue": "musaretail.com",
+			"defaultValue": "murphyusa.com",
 			"metadata": {
 				"description": "Default Subdomain for application routing (Wildcard DNS) - must enter something even if you are using nip.io"
 			}
@@ -1649,7 +1648,7 @@
 						"value": "[variables('redHatTags')]"
 					},
 					"sshPrivateKey": {
-						"value": "[parameters('keyVaultSecret')]"								
+						"value": "[variables('keyVaultSecret')]"
 					},
 				}
 			}
