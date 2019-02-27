@@ -229,7 +229,7 @@
 		},
 		"defaultSubDomain": {
 			"type": "string",
-			"defaultValue": "contoso.com",
+			"defaultValue": "musaretail.com",
 			"metadata": {
 				"description": "Default Subdomain for application routing (Wildcard DNS) - must enter something even if you are using nip.io"
 			}
@@ -349,7 +349,7 @@
 		},
 		"redHatTags": {
 			"app": "OpenShiftOrigin",
-			"version": "3.9",
+			"version": "3.11",
 			"platform": "AzurePublic",
 			"provider": "9d2c71fc-96ba-4b4a-93b3-14def5bc96fc"
 		},
