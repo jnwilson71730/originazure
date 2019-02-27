@@ -1649,11 +1649,8 @@
 						"value": "[variables('redHatTags')]"
 					},
 					"sshPrivateKey": {
-						"reference": {
-							"keyvault": {
-								"id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('keyVaultResourceGroup'), '/providers/Microsoft.KeyVault/vaults/', parameters('keyVaultName'))]"
-							},
-							"secretName": "[parameters('keyVaultSecret')]"
+						"value": "[parameters('keyVaultSecret')]"
+						
 						}
 					}
 				}
