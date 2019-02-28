@@ -148,13 +148,14 @@
 		},
 		"sshPublicKey": {
 			"type": "string",
-			"metadata": {
+			"defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLZbRorenh2D+XXgIajbbnxUvpV7H7RYeDagkY/OLUsWDtp9auDRzpe6BVogc4GE+Cn/ySXCQ/w7h8Wopo1sYb3IvyoWkRMY2U/JVyXlpxF2HIYpeJ9GCBn6TJUjnLEDYYUX/34Mo6Gz6dSvvhsZnHdiQI4iYEIHSNhFreGKGUAdi912J7tOji2sA6xGenuhj7Z+Oxrdh9qFYcZbRsX9G8JVnt1VCJNWffcKcIeQ7di0FWWuLdyhW++R1KvmrG3lARb2bxPCh3ELG6cEkqsKxcoq1z6i5mH0qZbpb8WhVXk+nf9BqMmn6CJs6RP/wxPAtMswF1ugvKmuFijcLU8+bZ root@DESKTOP-PI8C62E",
+ 			"metadata": {
 				"description": "SSH public key for all VMs"
 			}
 		},
 		"enableMetrics": {
 			"type": "string",
-			"defaultValue": "false",
+			"defaultValue": "true",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -164,7 +165,7 @@
 		},
 		"enableLogging": {
 			"type": "string",
-			"defaultValue": "false",
+			"defaultValue": "true",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -212,7 +213,7 @@
 		},
 		"aadClientSecret": {
 			"type": "securestring",
-			"minLength": 1,
+			"defaultValue": "",
 			"metadata": {
 				"description": "Azure AD Client Secret"
 			}
@@ -229,7 +230,7 @@
 		},
 		"defaultSubDomain": {
 			"type": "string",
-			"defaultValue": "murphyusa.onazure.com",
+			"defaultValue": "contoso.com",
 			"metadata": {
 				"description": "Default Subdomain for application routing (Wildcard DNS) - must enter something even if you are using nip.io"
 			}
@@ -1649,7 +1650,12 @@
 						"value": "[variables('redHatTags')]"
 					},
 					"sshPrivateKey": {
-						"value": "[parameters('keyVaultSecret')]"
+						"reference": {
+							"keyvault": {
+								"id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('keyVaultResourceGroup'), '/providers/Microsoft.KeyVault/vaults/', parameters('keyVaultName'))]"
+							},
+							"secretName": "[parameters('keyVaultSecret')]"
+						}
 					}
 				}
 			}
