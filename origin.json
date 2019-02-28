@@ -109,7 +109,7 @@
 		},
 		"infraInstanceCount": {
 			"type": "int",
-			"defaultValue": 3,
+			"defaultValue": 2,
 			"allowedValues": [1, 2, 3],
 			"metadata": {
 				"description": "Number of OpenShift infra nodes."
@@ -212,6 +212,7 @@
 		},
 		"aadClientSecret": {
 			"type": "securestring",
+			"minLength": 1,
 			"metadata": {
 				"description": "Azure AD Client Secret"
 			}
@@ -228,7 +229,7 @@
 		},
 		"defaultSubDomain": {
 			"type": "string",
-			"defaultValue": "murphyusa.com",
+			"defaultValue": "murphyusa.onazure.com",
 			"metadata": {
 				"description": "Default Subdomain for application routing (Wildcard DNS) - must enter something even if you are using nip.io"
 			}
