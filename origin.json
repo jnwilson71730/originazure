@@ -8,7 +8,7 @@
 				"description": "The base URL where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated.",
 				"artifactsBaseUrl": ""
 			},
-			"defaultValue": "https://github.com/jnwilson71730/originazure/edit/master"
+			"defaultValue": "https://raw.githubusercontent.com/Microsoft/openshift-origin/master"
 		},
 		"masterVmSize": {
 			"type": "string",
@@ -148,7 +148,7 @@
 		},
 		"sshPublicKey": {
 			"type": "string",
-			"defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLZbRorenh2D+XXgIajbbnxUvpV7H7RYeDagkY/OLUsWDtp9auDRzpe6BVogc4GE+Cn/ySXCQ/w7h8Wopo1sYb3IvyoWkRMY2U/JVyXlpxF2HIYpeJ9GCBn6TJUjnLEDYYUX/34Mo6Gz6dSvvhsZnHdiQI4iYEIHSNhFreGKGUAdi912J7tOji2sA6xGenuhj7Z+Oxrdh9qFYcZbRsX9G8JVnt1VCJNWffcKcIeQ7di0FWWuLdyhW++R1KvmrG3lARb2bxPCh3ELG6cEkqsKxcoq1z6i5mH0qZbpb8WhVXk+nf9BqMmn6CJs6RP/wxPAtMswF1ugvKmuFijcLU8+bZ root@DESKTOP-PI8C62E",
+			"defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3pHvnGY9AZhNluQL7VK1LAbWpMChqwmvCrjwmgJRVmNXNBA+0arXLlefxrNujZ6RhfTZWz3Xz3+Qh/xFCbUmwyYZfFAa8YORcdlEpzBidndrBYoeTcpW1BIkP3JKFgj2gv372R54sOlehh75cYJdKKnm/x2pUV795PQsklZ84+Ojubo9hPNnCELWlGZJ0tIk1McHR5XwhVn4WPeQYxOQtTDI88FX2Em6rMN3F9abJjtjAcV0hfS8P/wMNEjUcRACrO63q10xkvRlDgSyYvAbOuAG2CTpulCP3hnXVLrtMGKOBQZxV1r6phGQcPYhB44enOjrfR/nP5/f4R29Ga/6Z jay.wilson@murphyusa.com",
  			"metadata": {
 				"description": "SSH public key for all VMs"
 			}
