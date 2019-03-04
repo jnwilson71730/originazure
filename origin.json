@@ -345,12 +345,12 @@
 		"imageReference": {
 			"publisher": "Openlogic",
 			"offer": "CentOS",
-			"sku": "7.5",
+			"sku": "7.4",
 			"version": "latest"
 		},
 		"redHatTags": {
 			"app": "OpenShiftOrigin",
-			"version": "3.7",
+			"version": "3.9",
 			"platform": "AzurePublic",
 			"provider": "9d2c71fc-96ba-4b4a-93b3-14def5bc96fc"
 		},
