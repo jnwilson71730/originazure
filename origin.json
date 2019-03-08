@@ -109,7 +109,7 @@
 		},
 		"infraInstanceCount": {
 			"type": "int",
-			"defaultValue": 2,
+			"defaultValue": 1,
 			"allowedValues": [1, 2, 3],
 			"metadata": {
 				"description": "Number of OpenShift infra nodes."
