@@ -220,7 +220,6 @@
 		},
 		"aadClientSecret": {
 			"type": "securestring",
-			"defaultValue": "",
 			"metadata": {
 				"description": "Azure AD Client Secret"
 			}
