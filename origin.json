@@ -228,7 +228,7 @@
 		},
 		"defaultSubDomain": {
 			"type": "string",
-			"defaultValue": "okddev2.murphyusa.com",
+			"defaultValue": "ng3rfq1lqioubf5z5qx1azr5ae.bx.internal.cloudapp.net",
 			"metadata": {
 				"description": "Default Subdomain for application routing (Wildcard DNS) - must enter something even if you are using nip.io"
 			}
